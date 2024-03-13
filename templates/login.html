@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    background: url(bg\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: plum;
+}
+.wrapper{
+    width:420px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #333;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+
+    margin: 36px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #333;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color: white;
+
+}
+/* .input-box i {
+    position:absolute;
+    right: 35%;
+    padding: 15px;
+    padding-right: 10px;
+    font-size: 20px;
+} */
+.wrapper .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.remember-forget label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forget a{
+    color: #333;
+    text-decoration: none;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+    color: #fff;
+    transition: 0.4s;
+
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.btn:hover{
+     color: #fff;
+     background-color: #333;
+     transition: 0.8s;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px 0 15px;
+}
+.register-link p a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+    color: #fff;
+    transition: 0.4s;
+}
+
+
+.wrapper .btn1{
+    margin-top: 20px;
+    margin-left:90px;
+    width: 160px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.btn1:hover{
+     color: #fff;
+     background-color: #ff4343;
+     transition: 0.8s;
+}
+
+.wrapper .btn2{
+    margin-top: 20px;
+    margin-left:2px;
+    width: 160px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.btn2:hover{
+    color: #fff;
+    background-color: #316ff6;
+    transition: 0.8s;
+}
+    </style>
+    <link rel="icon" href="">
+  
+</head>
+<body>
+    <div class="wrapper">
+        <form action="/form_login" method="post">
+            <h1>Login</h1>
+
+            <div class="input-box">
+                <input type="text" placeholder="Username" id="username" name='username'
+                required>
+                <!-- <i class='bx bxs-user'></i> -->
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password" id="password" name='password'
+                required>
+                <!-- <i class='bx bxs-lock-alt'></i> -->
+            </div>
+
+            <div class="remember-forget">
+                <label> <input type="checkbox"> Remember me!</label>
+                <a href="#"> Forgot Password</a>
+            </div>
+
+            <button type="submit" class="btn" onclick="loginUser()">Login</button>
+            <div class="register-link">
+                <p>OR</p>
+                <p>
+                    Login With Google
+                <a href=""></a></p>
+            </div>
+
+            <button type="submit" class="btn1">Gmail</button> 
+            
+
+            
+        </form>
+    </div>
+    <!-- <script>
+        function loginUser() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Perform basic validation
+            if (username === "" || password === "") {
+                alert("Please enter both username and password.");
+                return;
+            }
+
+            // Simulate authentication (replace with actual authentication logic)
+            if (username === "user" && password === "pass") {
+                alert("Login successful!");
+                // Redirect to the homepage
+                window.location.href = "index.html";
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script> -->
+
+  <h1>{{info}}</h1>
+    
+</body>
+</html>
