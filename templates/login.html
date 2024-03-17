@@ -170,6 +170,7 @@ body{
 }
     </style>
     <link rel="icon" href="">
+    <script src="main.js" defer type="module"></script>
   
 </head>
 <body>
@@ -179,13 +180,13 @@ body{
 
             <div class="input-box">
                 <input type="text" placeholder="Username" id="username" name='username'
-                required>
+                >
                 <!-- <i class='bx bxs-user'></i> -->
             </div>
 
             <div class="input-box">
                 <input type="password" placeholder="Password" id="password" name='password'
-                required>
+                >
                 <!-- <i class='bx bxs-lock-alt'></i> -->
             </div>
 
@@ -202,33 +203,12 @@ body{
                 <a href=""></a></p>
             </div>
 
-            <button type="submit" class="btn1">Gmail</button> 
+            <button type="submit" id ="google-login-btn" class="btn1">Gmail</button> 
             
 
             
         </form>
     </div>
-    <!-- <script>
-        function loginUser() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-
-            // Perform basic validation
-            if (username === "" || password === "") {
-                alert("Please enter both username and password.");
-                return;
-            }
-
-            // Simulate authentication (replace with actual authentication logic)
-            if (username === "user" && password === "pass") {
-                alert("Login successful!");
-                // Redirect to the homepage
-                window.location.href = "index.html";
-            } else {
-                alert("Invalid username or password. Please try again.");
-            }
-        }
-    </script> -->
 
   <h1>{{info}}</h1>
     

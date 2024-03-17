@@ -1,3 +1,4 @@
+from doctest import debug
 import json
 from flask import Flask, render_template, request,redirect,send_file, session
 # import pandas as pd
@@ -16,7 +17,7 @@ app= Flask(__name__)
 @app.route('/')
 def hello_world():
     return render_template("login.html")
-database = {'user' : '123','admin':'admin123','Nisha':'123'}
+database = {'user' : '123','admin':'admin123','Suresh':'123'}
 
 @app.route('/form_login', methods=['POST','GET'])
 def login():
