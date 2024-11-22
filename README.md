@@ -47,10 +47,16 @@ python main.py
 rategic insights.
 
 # Screenshots
+![Login page](Screenshots/login.png)
+![Home page](Screenshots/home.png)
+![Product page](Screenshots/product1.png)
+![Product page](Screenshots/product2.png)
+![Comparison page](Screenshots/comparison.png)
+![Review page](Screenshots/review.png)
 
 
-Future Enhancements
-Add more e-commerce platforms for comparison.
-Implement graphical dashboards for better visualization of results.
-Enable user interaction through a web-based interface.
-Automate the comparison process using APIs (if available).
+# Future Enhancements
+- Add more e-commerce platforms for comparison.
+- Implement graphical dashboards for better visualization of results.
+- Enable user interaction through a web-based interface.
+- Automate the comparison process using APIs (if available).
