@@ -49,16 +49,21 @@ rategic insights.
 # Screenshots
 - Login page
 ![Login page](Screenshots/login.png)
+
 - Home page
 ![Home page](Screenshots/home.png)
+
 - Product page
 ![Product page](Screenshots/product1.png)
+
 - Product page
 ![Product page](Screenshots/product2.png)
+
 - Comparison page
 ![Comparison page](Screenshots/comparison.png)
+
 - Review Page
-![Review page](Screenshots/analyis.png)
+![analysis page](Screenshots/analysis.png)
 
 
 # Future Enhancements
