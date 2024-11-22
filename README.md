@@ -47,12 +47,18 @@ python main.py
 rategic insights.
 
 # Screenshots
+- Login page
 ![Login page](Screenshots/login.png)
+- Home page
 ![Home page](Screenshots/home.png)
+- Product page
 ![Product page](Screenshots/product1.png)
+- Product page
 ![Product page](Screenshots/product2.png)
+- Comparison page
 ![Comparison page](Screenshots/comparison.png)
-![Review page](Screenshots/review.png)
+- Review Page
+![Review page](Screenshots/analyis.png)
 
 
 # Future Enhancements
